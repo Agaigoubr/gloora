@@ -2,17 +2,28 @@
 import React from "react";
 import Image from "next/image";
 
-// ProductCard component with extra details (icons, video, etc.)
-const ProductCard = ({ discount, category, title, description, price, oldPrice, image, icona, iconb, iconc, video }) => {
+// مكون بطاقة المنتج المتقدمة (مع رموز وفيديو)
+const ProductCardFull = ({
+  discount,
+  category,
+  title,
+  description,
+  price,
+  oldPrice,
+  image,
+  icona,
+  iconb,
+  iconc,
+  video,
+}) => {
   return (
-    <div 
-      className=" relative flex bg-[#F7F7F7] shadow-lg p-6 rounded-[30px] mt-[1300px]" 
-      style={{ width: "1000px", height: "467px", position: "absolute", top: "1010px", left: "39px" }}
-    >
-      {/* Discount Badge */}
-      <div className="absolute top-4 left-4 bg-black text-white text-lg px-4 py-2 rounded-full">{discount}%</div>
+    <div className="relative flex bg-[#F7F7F7] shadow-lg p-6 rounded-[30px] mt-[30px] w-[1000px] h-[467px] mr-[310px] overflow-hidden">
+      {/* شارة الخصم */}
+      <div className="absolute top-4 left-4 bg-black text-white text-lg px-4 py-2 rounded-full">
+        {discount}%
+      </div>
 
-      {/* Text Content */}
+      {/* النصوص */}
       <div className="flex-1 flex flex-col justify-center pl-10">
         <h1 className="text-[#F18453] text-lg uppercase">{category}</h1>
         <h2 className="text-4xl font-semibold mt-2">{title}</h2>
@@ -23,30 +34,56 @@ const ProductCard = ({ discount, category, title, description, price, oldPrice, 
         </div>
       </div>
 
-      {/* Product Image */}
-      <div className="w-[400px] flex justify-center items-center">
-        <Image src={image} alt={title} width={400} height={400} className="rounded-lg object-cover" />
+      {/* الجهة اليمنى */}
+      <div className="relative w-[400px] flex justify-center items-center">
+        <Image
+          src={image}
+          alt={title}
+          width={400}
+          height={400}
+          className="rounded-lg object-cover"
+        />
 
-        {/* Icons */}
-        <Image src={icona} alt={title} width={70} height={69} className="absolute object-cover mb-[355px] ml-[330px]" />
-        <Image src={iconb} alt={title} width={55} height={55} className="absolute object-cover mt-[375px] ml-[330px]" />
-        <Image src={iconc} alt={title} width={55} height={55} className="absolute object-cover mt-[375px] ml-[180px]" />
+        {/* رموز إضافية */}
+        <Image
+          src={icona}
+          alt="icon a"
+          width={70}
+          height={69}
+          className="absolute top-2 right-[40px]"
+        />
+        <Image
+          src={iconb}
+          alt="icon b"
+          width={55}
+          height={55}
+          className="absolute bottom-4 right-[40px]"
+        />
+        <Image
+          src={iconc}
+          alt="icon c"
+          width={55}
+          height={55}
+          className="absolute bottom-4 right-[170px]"
+        />
 
-        {/* Video */}
-        <video src={video} alt={title} width={259} height={200} className="absolute rounded-[30px] object-cover ml-[750px]" />
-
-        {/* Discount Button */}
-        <button className="absolute rounded-[30px] bg-white h-[50px] w-[104px] mt-[10px] ml-[890px] mb-[400px]">-30%</button>
+        {/* الفيديو */}
+   
       </div>
+
+    
     </div>
+
+
+
   );
 };
 
-// ProductGrid component that uses ProductCard
+// مكون شبكة لبطاقة المنتج المتقدمة
 export default function ProductGrid() {
   return (
-    <div>
-      <ProductCard
+    <div className="flex justify-center items-center flex-col">
+      <ProductCardFull
         discount="-30"
         category="ACCESSORIES"
         title="Gloora Bag for Makeup"
@@ -57,23 +94,30 @@ export default function ProductGrid() {
         icona="/icon/icona.svg"
         iconb="/icon/iconb.svg"
         iconc="/icon/iconc.svg"
-        video="videos/1r.mp4"
+        video="/videos/1r.mp4"
       />
     </div>
   );
 }
 
-// ProductCardto component with simpler design (no icons, video)
-const ProductCardto = ({ discount, category, title, description, price, oldPrice, image }) => {
+// مكون بطاقة بسيطة بدون رموز أو فيديو
+const ProductCardSimple = ({
+  discount,
+  category,
+  title,
+  description,
+  price,
+  oldPrice,
+  image,
+}) => {
   return (
-    <div 
-      className="relative flex bg-red-50 shadow-lg p-6 rounded-[30px] mt-[2300px]" 
-      style={{ width: "1000px", height: "467px", position: "absolute", top: "1010px", left: "39px" }}
-    >
-      {/* Discount Badge */}
-      <div className="absolute top-4 left-4 bg-black text-white text-lg px-4 py-2 rounded-full">{discount}%</div>
+    <div className="relative flex bg-red-50 shadow-lg p-6 rounded-[30px] mt-32 w-[1000px] h-[467px]">
+      {/* شارة الخصم */}
+      <div className="absolute top-4 left-4 bg-black text-white text-lg px-4 py-2 rounded-full">
+        {discount}%
+      </div>
 
-      {/* Text Content */}
+      {/* النصوص */}
       <div className="flex-1 flex flex-col justify-center pl-10">
         <h1 className="text-orange-400 text-lg uppercase">{category}</h1>
         <h2 className="text-4xl font-semibold mt-2">{title}</h2>
@@ -84,19 +128,25 @@ const ProductCardto = ({ discount, category, title, description, price, oldPrice
         </div>
       </div>
 
-      {/* Product Image */}
+      {/* صورة المنتج */}
       <div className="w-[400px] flex justify-center items-center">
-        <Image src={image} alt={title} width={400} height={400} className="rounded-lg object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          width={400}
+          height={400}
+          className="rounded-lg object-cover"
+        />
       </div>
     </div>
   );
 };
 
-// ProductGridto component that uses ProductCardto
-export function ProductGridto() {
+// مكون شبكة للبطاقات البسيطة
+export function ProductGridSimple() {
   return (
-    <div>
-      <ProductCardto
+    <div className="flex justify-center items-center flex-col">
+      <ProductCardSimple
         discount="-30"
         category="ACCESSORIES"
         title="Gloora Bag for Makeup"

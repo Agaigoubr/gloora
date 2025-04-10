@@ -1,315 +1,50 @@
 import React from 'react'
 import Image from 'next/image'
-export default function page() {
+
+import Link from 'next/link'
+export default function ProductGrid() {
+  const products = Array(6).fill({
+    name: "GLoora",
+    subtitle: "Instant Anti-Rides",
+    price: "$19.00",
+    oldPrice: "$30.00",
+    image: "/img/prodct/prodact1.png", // ضع مسار الصورة هنا
+  });
+
   return (
-    <div className='hidden md:block bg-red-100 w-[1512px] h-[1645px] top-[2040px] mt-[2400px] ' >
+<div className="min-h-screen bg-gray-50 p-6">
+  <div className="flex overflow-x-auto space-x-6 space-y-6 max-w-6xl mx-auto pb-4">
+    {products.map((product, index) => (
+      <div
+        key={index}
+        className="bg-white w-[567px] h-[705px] rounded-[40px] p-4 shadow-md hover:shadow-lg transition shrink-0"
+      >
+     
+        <h3 className="text-gray-800 font-semibold mt-[10px] ml-[40px] text-[20px]">{product.name}</h3>
 
 
 
+        <p className="text-sm text-gray-500 mb-2">{product.subtitle}</p>
 
-      <div  className='bg-white w-[567px] h-[705px]  ml-[390px] rounded-[29px] mt-[40px] absolute '>
-        <h1 className='fond bold text-black mt-[50px] text-3xl ml-[50px]'>
         <img
-            src="/icon/icond.svg"
-            className="absolute w-[70px] h-[69px] ml-[420px] mt-[550px]"
-            />
-        
+          src={product.image}
+          alt={product.name}
+          className="w-full h-48 object-contain mb-4"
+        />
 
-
-        <img
-            src="/img/prda.png"
-            className="absolute w-[475px] h-[385px] ml-[0px] mt-[80px]"
-            />
-        
-
-
-
-        Gloora 
-        <br />
-        Instant Anti-Rides
-            
-            </h1>
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-          
-
-
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-
-
+        <div className="flex items-center gap-2">
+          <span className="text-lg font-bold text-gray-900">{product.price}</span>
+          <span className="text-sm line-through text-gray-400">{product.oldPrice}</span>
+        </div>
+        <div className="mt-4 flex justify-end">
+          <button className="bg-white border border-gray-300 rounded-full p-2 hover:bg-gray-100 transition">
+            🛒
+          </button>
+        </div>
+      </div>
+    ))}
+  </div>
 </div>
 
-
-
-
-
-
-
-
-
-      <  div  className='bg-white w-[567px] h-[705px]  ml-[970px] rounded-[29px] mt-[40px] absolute '>
-        <h1 className='fond bold text-black mt-[50px] text-3xl ml-[50px]'>
-        <img
-            src="/icon/icond.svg"
-            className="absolute w-[70px] h-[69px] ml-[420px] mt-[550px]"
-            />
-        
-
-
-        <img
-            src="/img/prda.png"
-            className="absolute w-[475px] h-[385px] ml-[0px] mt-[80px]"
-            />
-        
-
-
-
-        Gloora 
-        <br />
-        Instant Anti-Rides
-            
-            </h1>
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-          
-
-
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-
-
-</div>
-
-
-
-
-        <div  className='bg-white w-[567px] h-[705px]  mr-[590px] rounded-[29px] mt-[40px] absolute '>
-        <h1 className='fond bold text-black mt-[50px] text-3xl ml-[50px]'>
-        <img
-            src="/icon/icond.svg"
-            className="absolute w-[70px] h-[69px] ml-[420px] mt-[550px]"
-            />
-        
-
-
-        <img
-            src="/img/prda.png"
-            className="absolute w-[475px] h-[385px] ml-[0px] mt-[80px]"
-            />
-        
-
-
-
-        Gloora 
-        <br />
-        Instant Anti-Rides
-            
-            </h1>
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-          
-
-
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div  className='bg-white w-[567px] h-[705px]  ml-[390px] rounded-[29px] mt-[760px] absolute '>
-        <h1 className='fond bold text-black mt-[50px] text-3xl ml-[50px]'>
-        <img
-            src="/icon/icond.svg"
-            className="absolute w-[70px] h-[69px] ml-[420px] mt-[550px]"
-            />
-        
-
-
-        <img
-            src="/img/prda.png"
-            className="absolute w-[475px] h-[385px] ml-[0px] mt-[80px]"
-            />
-        
-
-
-
-        Gloora 
-        <br />
-        Instant Anti-Rides
-            
-            </h1>
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-          
-
-
-
-
-
-           
-</div>
-
-
-
-
-
-
-
-
-
-      <  div  className='bg-white w-[567px] h-[705px]  ml-[970px] rounded-[29px] mt-[760px] absolute '>
-        <h1 className='fond bold text-black mt-[50px] text-3xl ml-[50px]'>
-        <img
-            src="/icon/icond.svg"
-            className="absolute w-[70px] h-[69px] ml-[420px] mt-[550px]"
-            />
-        
-
-
-        <img
-            src="/img/prda.png"
-            className="absolute w-[475px] h-[385px] ml-[0px] mt-[80px]"
-            />
-        
-
-
-
-        Gloora 
-        <br />
-        Instant Anti-Rides
-            
-            </h1>
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-          
-
-
-
-
-
-
-
-</div>
-
-
-
-
-        <div  className='bg-white w-[567px] h-[705px]  mr-[590px] rounded-[29px] mt-[760px] absolute '>
-        <h1 className='fond bold text-black mt-[50px] text-3xl ml-[50px]'>
-        <img
-            src="/icon/icond.svg"
-            className="absolute w-[70px] h-[69px] ml-[420px] mt-[550px]"
-            />
-        
-
-
-        <img
-            src="/img/prda.png"
-            className="absolute w-[475px] h-[385px] ml-[0px] mt-[80px]"
-            />
-        
-
-
-
-        Gloora 
-        <br />
-        Instant Anti-Rides
-            
-            </h1>
-
-
-
-            <h1 className='fond bold text-3xl text-black ml-[50px] mt-[500px]'>$19.00
-
-            </h1>
-          
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>      
-
-
-
-
-
-
-
-        
-
-
-
-
-
-  )
+  );
 }

@@ -15,7 +15,7 @@ const averiaSerifLibre = Averia_Serif_Libre({
 
 export default function AboutTxt() {
   return (
-    <div className='hidden md:block bg-white w-[1512px] h-[700px]'>
+    <div className='hidden md:block bg-white w-[1312px] h-[700px]'>
         <h1 className='absolute fond-bold text-3xl text-[#F4AD8C] ml-[200px] mt-[120px]'>
             About Us
             </h1>

@@ -20,20 +20,20 @@ export default function home() {
 
 <Home /> 
 
+<Rilat/>
+<div className="hidden  md:block">
+<Prodact  />
+<Prodacto />
 
 
-<Rilat />
+<Stor />
+<Stor />
+</div>
 
 
+<Why />
 
-<Prodact/>
-<Prodacto/>
-<Mobil />
-<Stor/>
-
-<Why/>
-<AboutTxt />
-
+<AboutTxt/>
 
     </main>
     
