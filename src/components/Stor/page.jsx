@@ -8,7 +8,7 @@ export default function ProductGrid() {
     subtitle: "Instant Anti-Rides",
     price: "$19.00",
     oldPrice: "$30.00",
-    image: "/img/prodct/prodact1.png", // ضع مسار الصورة هنا
+    image: "/stor/pr.png", // ضع مسار الصورة هنا
   });
 
   return (
@@ -20,28 +20,32 @@ export default function ProductGrid() {
         className="bg-white w-[567px] h-[705px] rounded-[40px] p-4 shadow-md hover:shadow-lg transition shrink-0"
       >
      
-        <h3 className="text-gray-800 font-semibold mt-[10px] ml-[40px] text-[20px]">{product.name}</h3>
+        <h1 className="text-black  mt-[50px] ml-[70px] text-[30px]">{product.name}</h1>
 
 
-
-        <p className="text-sm text-gray-500 mb-2">{product.subtitle}</p>
+        <p className="text-black  mt-[0px] ml-[70px] text-[30px]">{product.subtitle}</p>
 
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-48 object-contain mb-4"
+          className="w-[475px] h-[385px] mt-[60px] ml-[30px] object-contain mb-4"
         />
 
         <div className="flex items-center gap-2">
-          <span className="text-lg font-bold text-gray-900">{product.price}</span>
-          <span className="text-sm line-through text-gray-400">{product.oldPrice}</span>
-        </div>
-        <div className="mt-4 flex justify-end">
-          <button className="bg-white border border-gray-300 rounded-full p-2 hover:bg-gray-100 transition">
-            🛒
+          <span className="text-[25px]  font-bold text-black mt-[10px] ml-[30px]">{product.price}</span>
+          <span className="text-sm line-through text-gray-400 mt-[10px]">{product.oldPrice}</span>
+        
+       <div className="mt-1  ml-[350px] flex justify-end"> 
+          <Link href={"/"}>
+          <button>
+            <img
+            className=' w-[70px] h-[69px] '
+            src="icon/icona.svg" alt="stor" />
           </button>
+          </Link>
         </div>
       </div>
+</div>
     ))}
   </div>
 </div>

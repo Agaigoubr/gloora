@@ -1,4 +1,5 @@
 "use client";
+import useSWR from 'swr';
 import next from "next";
 import Image from "next/image";
 import Rilat from "@/components/Rilat/page";

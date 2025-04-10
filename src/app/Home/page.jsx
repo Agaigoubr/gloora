@@ -61,7 +61,7 @@ export default function Home() {
 
       {/* Mobile View */}
       <div className="block md:hidden relative">
-        <img className="w-[368px] h-[774px] mt-[100px] ml-[10px]" src="/img/homemobil.svg" alt="mobil" />
+        <img className="w-[368px] h-[774px] mt-[10px] ml-[10px]" src="/img/homemobil.svg" alt="mobil" />
 
         <div className={`${averiaSerifLibre.className} absolute top-[15%] left-[5%] z-10 text-white`}>
           <h1 className="font-bold leading-tight text-[27px]">Unlock Your Skin's</h1>
