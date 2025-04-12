@@ -40,10 +40,12 @@ export default function Product() {
     All Gloora Products.
 
     </h1>
+    <div className='absolute mt-[160px] ml-[400px]'>
+      <Stor/>
+    </div>
+    
+    <Teste  />
 
-    <Teste />
-
-<Stor />
 
 </div>
 

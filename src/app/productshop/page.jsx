@@ -1,6 +1,9 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
 import { Averia_Serif_Libre } from "next/font/google";
+import Test from '@/components/Test/page';
+import Testt from "@/app/Testt/page";
 
 
 const averiaSerifLibre = Averia_Serif_Libre({
@@ -73,9 +76,32 @@ export default function Productshop() {
 
 </div>
 
+<div className='bg-[#F7F7F7] absolute w-[547px] h-[483px]'>
+
+
+
+
+
+
+
+
+
+  
+</div>
+
 
 </div>
 
+
+
+
+
+<Testt/>
+
+
+
     </div>
+
+
   )
 }

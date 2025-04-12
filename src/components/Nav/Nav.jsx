@@ -53,10 +53,12 @@ export default function Nav() {
       </div>
 
       {/* Navbar خاص بالموبايل */}
-      <div className="block md:hidden  top-1 left-0 w-full  p-3 flex justify-between ">
+      <div className="block md:hidden  top-1 left-1 w-full  p-3 flex justify-between ">
       {/* Logo */}
       <Link href="/">
-        <Image src="/logor.svg" alt="Logo" width={117} height={37} />
+        <img
+        className='mt-[10px]  w-[177px] h-[37.61px]'
+        src="/logor.svg" alt="Logo"  />
       </Link>
 
       {/* Icons */}

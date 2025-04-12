@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 import AboutTxt from "@/components/AboutTxt/page";
 import Mobil from "@/components/Mobil/page";
 
-
+import Img from "@/components/Img/page";
 
 
 export default function home() {
@@ -33,6 +33,7 @@ export default function home() {
 
 
 <Why />
+<Img/>
 
 <AboutTxt/>
 
