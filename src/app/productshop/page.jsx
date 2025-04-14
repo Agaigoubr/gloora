@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Averia_Serif_Libre } from "next/font/google";
 import Test from '@/components/Test/page';
 import Testt from "@/app/Testt/page";
+import Prod from "@/app/productshop/Prod/page";
 
 
 const averiaSerifLibre = Averia_Serif_Libre({
@@ -97,6 +98,8 @@ export default function Productshop() {
 
 
 <Testt/>
+
+<Prod/>
 
 
 

@@ -114,81 +114,200 @@ export default function Home() {
          </button>
        
    
-    
+         <button className='absolute mb-[490px] mr-[200px] bg-black rounded-[40px] w-[104px] h-[54px] text-white'>-66!</button>
+
        
-            <video  src="/videos/1r.mp4" className="p-8  rounded-[30px]  w-[374px] h-[707px]" >
-
-<div className='absolute rounded-[40px] bg-black left-[20px] top-[40px] w-[30px] h-[40px] '></div>
-
-            <h1 className=' absolute left-[30px] text-[15px] text-[#3C3C3C]' >Winkle Remover + Retinol</h1>
-
-
-</video>
-
-<div className="absolute bg-glass overflow-x-scroll w-[374px] h-[267px] mt-[150px]  flex  justify-center items-center  gap-1  ">
-  <div className="bg-white w-[149px] h-[205px] rounded-[40px] items-start flex-col ">
+            <img  src="/img/pnp.png" className="p-5  py-[70px] rounded-[30px]  w-[374px] h-[707px]" >
 
 
 
-<img 
-className=' flex ml-[25px] mt-[25px] w-[88px] h-[105px]'
-src="/img/mobil/pr1.png"
- alt="prd" />
 
-<h1 className='text-[20px] ml-[40px] text-[#D0D0D0] '>SPF</h1>
-
-
-  </div>
+</img>
 
 
 
 
 
-  <div className="bg-white w-[149px] h-[205px] rounded-[40px]  items-start flex-col">
 
+
+
+
+
+
+
+<div className="flex overflow-x-auto  w-[440px] mt-[200px] ml-[0px] space-x-3 max-w-6xl mx-auto p-4  absolute">
+  <div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
 
   <img 
-className=' flex ml-[25px] mt-[25px] w-[92.97px] h-[95.51px]'
-src="/img/mobil/pr2.png"
- alt="prd" />
-  <h1 className='text-[20px] ml-[40px] text-[#D0D0D0] '>Treatment</h1>
+    className="mt-[20px] ml-[40px]"
+    src="/img/test.png" alt="test" />
 
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
 
+    <img 
+    className="mt-[0px] ml-[20px]"
+    src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+    Paula’s Choice
+   
+    </h1>
+    <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+   
+    </h1>
   </div>
-  <div className="bg-white w-[149px] h-[205px] rounded-[40px] items-start flex-col ">
 
+
+
+
+
+
+  <div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
+
+<img 
+  className="mt-[20px] ml-[40px]"
+  src="/img/test.png" alt="test" />
+
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
+
+  <img 
+  className="mt-[0px] ml-[20px]"
+  src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+  Paula’s Choice
  
-  <h1 className='text-[20px] ml-[40px] text-[#D0D0D0] '>Medical</h1>
+  </h1>
+  <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+ 
+  </h1>
+</div><div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
 
-  </div>
+<img 
+  className="mt-[20px] ml-[40px]"
+  src="/img/test.png" alt="test" />
 
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
+
+  <img 
+  className="mt-[0px] ml-[20px]"
+  src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+  Paula’s Choice
+ 
+  </h1>
+  <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+ 
+  </h1>
+</div><div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
+
+<img 
+  className="mt-[20px] ml-[40px]"
+  src="/img/test.png" alt="test" />
+
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
+
+  <img 
+  className="mt-[0px] ml-[20px]"
+  src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+  Paula’s Choice
+ 
+  </h1>
+  <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+ 
+  </h1>
+</div><div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
+
+<img 
+  className="mt-[20px] ml-[40px]"
+  src="/img/test.png" alt="test" />
+
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
+
+  <img 
+  className="mt-[0px] ml-[20px]"
+  src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+  Paula’s Choice
+ 
+  </h1>
+  <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+ 
+  </h1>
+</div><div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
+
+<img 
+  className="mt-[20px] ml-[40px]"
+  src="/img/test.png" alt="test" />
+
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
+
+  <img 
+  className="mt-[0px] ml-[20px]"
+  src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+  Paula’s Choice
+ 
+  </h1>
+  <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+ 
+  </h1>
+</div><div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
+
+<img 
+  className="mt-[20px] ml-[40px]"
+  src="/img/test.png" alt="test" />
+
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
+
+  <img 
+  className="mt-[0px] ml-[20px]"
+  src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+  Paula’s Choice
+ 
+  </h1>
+  <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+ 
+  </h1>
+</div><div className="flex-shrink-0 rounded-[40px] bg-white w-[149px] h-[205px]">
+
+<img 
+  className="mt-[20px] ml-[40px]"
+  src="/img/test.png" alt="test" />
+
+<p className="text-[#D0D0D0] text-[20px]  absolute ml-[60px]">SPF</p>
+
+  <img 
+  className="mt-[0px] ml-[20px]"
+  src="/img/icontest.png" alt="test" />
+
+<h1 className="text-black ml-[20px] text-[15px] ">
+  Paula’s Choice
+ 
+  </h1>
+  <h1 className="text-black ml-[20px] text-[15px] ">
+Skin Perfecting
+ 
+  </h1>
 </div>
 
-<button className='absolute top-[70px] left-[50px] w-[104px] h-[54px] rounded-[30px] bg-black  text-white'>
--66
-</button>
 
 
-
-
-<h1 className=' absolute text-[15px] left-[20px] top-[560px] text-[#3C3C3C]'>
-Winkle Remover + Retinol
-  </h1>
-
-  <h1 className=' absolute top-[580px] left-[30px] text-[25px] text-black '>
-  $19.00
-  </h1>
-
-
-<button className=' absolute top-[570px] left-[230px] bg-[#F3A17C]  rounded-[30px] w-[115px] h-[45px] text-[white]'>
-  Buy Now
-</button>
-
-
-
-
-
- </div>
+  </div>
 
 
 
@@ -201,7 +320,7 @@ Winkle Remover + Retinol
 
 
 
-
+</div>
 
 
 
@@ -224,6 +343,44 @@ Winkle Remover + Retinol
 
 
 
-    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   );
 }
