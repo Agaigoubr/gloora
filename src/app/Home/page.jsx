@@ -102,11 +102,13 @@ export default function Home() {
 </div>
 
             
-            </button>test
+            </button>
         </div>
 
         {showOverlay && (
-         <div className="fixed inset-0 flex bg-black/50 justify-center items-center z-50">
+
+         <div className="fixed inset-0 flex bg-black/50 justify-center items-center   z-50">
+
          
          <button 
            className="absolute top-[5px] right-4 p-2 rounded-full text-white  hover:bg-glass transition"
@@ -118,8 +120,14 @@ export default function Home() {
    
          <button className='absolute mb-[490px] mr-[200px] bg-black rounded-[40px] w-[104px] h-[54px] text-white'>-66!</button>
 
-       
-            <img  src="/img/pnp.png" className="p-5  py-[70px] rounded-[30px]  w-[374px] h-[707px]" >
+         <h1 className=' absolute  text-[18px] mt-[500px] mr-[95px] text-[#3C3C3C] '>Winkle Remover + Retinol</h1>
+         <h1 className=' absolute fond-bold text-[24px] mt-[550px] mr-[255px] text-black '>$19.00</h1>
+
+<button className='absolute bg-[#F3A17C] w-[115px] h-[45px] rounded-[40px] mt-[550px] ml-[220px] text-white'>Buy Now</button>
+
+
+            <img  src="/img/mobil/test1.png" className="p-2  py-[30px] rounded-[30px]  w-[374px] h-[707px]" >
+
 
 
 
@@ -319,13 +327,12 @@ Skin Perfecting
 
 
 
+  <div className="fixed inset-0 flex bg-black/50 justify-center items-center  mt-[1000px] z-50"></div>
+
 
 
 
 </div>
-
-
-
 
 
 
