@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import NavHome from '@/components/Nav/Nav';
 import Anim from "@/components/Anim/page";
 import { GoX } from "react-icons/go";
+import Pagemobil from "@/mobil/Pagemobil/page";
 
 const averiaSerifLibre = Averia_Serif_Libre({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ const averiaSerifLibre = Averia_Serif_Libre({
 
 export default function Home() {
   const [showOverlay, setShowOverlay] = useState(false);
+  const [showOverlaye, setShowOverlaye] = useState(false);
 
   return (
     <div className="relative">
@@ -100,14 +102,14 @@ export default function Home() {
 </div>
 
             
-            </button>
+            </button>test
         </div>
 
         {showOverlay && (
          <div className="fixed inset-0 flex bg-black/50 justify-center items-center z-50">
          
          <button 
-           className="absolute top-[5px] right-4 p-2 rounded-full text-white  hover:bg-black/70 transition"
+           className="absolute top-[5px] right-4 p-2 rounded-full text-white  hover:bg-glass transition"
            onClick={() => setShowOverlay(false)}
          >
            <GoX className="w-8 h-8" />
@@ -332,6 +334,69 @@ Skin Perfecting
 
 
         )}
+
+
+<button
+className='bg-red-300  absolute mb-[400px] h-[200px]  w-[200px] rounded-[40px]'
+onClick={() => setShowOverlaye(true)} >test button page 3</button>
+
+
+
+
+{showOverlaye && (
+
+
+<Pagemobil/>
+
+        
+
+
+
+  
+)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
 
 
