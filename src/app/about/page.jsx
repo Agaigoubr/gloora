@@ -1,4 +1,4 @@
-
+"use cliant";
 import React from 'react'
 import Image from 'next/image'
 import { Averia_Serif_Libre } from "next/font/google";

@@ -1,87 +1,126 @@
-import React from 'react'
-import Image from 'next/image'
+"use claint";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export default function test() {
+
+
+
+export default function page() {
   return (
-    <div className="relative w-full h-screen">
-  {/* Group 399 */}
-  <div className="absolute w-[241.39px] h-[162.58px] left-1/2 -translate-x-1/2 top-[213px]">
-    {/* Vector elements */}
-    <div className="absolute left-[56.6%] right-[42.58%] top-[28.63%] bottom-[69.98%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[45.76%] right-[53.21%] top-[25.62%] bottom-[73.07%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[57.22%] right-[42.44%] top-[35.99%] bottom-[62.96%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[45.93%] right-[53.37%] top-[36.85%] bottom-[62.56%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[48.55%] right-[50.58%] top-[36.2%] bottom-[62.71%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[56.45%] right-[42.83%] top-[25.32%] bottom-[73.69%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[46.07%] right-[53.15%] top-[33.13%] bottom-[65.78%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[43.37%] right-[54.85%] top-[33.91%] bottom-[64%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[47.27%] right-[52.22%] top-[36.97%] bottom-[61.75%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[44.95%] right-[53.97%] top-[21.86%] bottom-[76.75%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[51.25%] right-[48.25%] top-[22.81%] bottom-[76.66%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[50.93%] right-[48.49%] top-[28.02%] bottom-[70.87%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[57.18%] right-[42.04%] top-[33.95%] bottom-[64.69%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[42.81%] right-[56.66%] top-[32.76%] bottom-[66.31%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[46.93%] right-[52.5%] top-[31.32%] bottom-[67.67%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[53.53%] right-[45.65%] top-[21.69%] bottom-[76.56%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[50.57%] right-[48.8%] top-[32.2%] bottom-[66.67%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[53.96%] right-[45.1%] top-[32.11%] bottom-[66.89%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[53.09%] right-[46.3%] top-[34.95%] bottom-[64.45%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[52.46%] right-[46.87%] top-[30.61%] bottom-[68.39%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[52.49%] right-[46.47%] top-[24.74%] bottom-[73.78%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[47.21%] right-[52.05%] top-[29.17%] bottom-[69.84%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[47.41%] right-[51.8%] top-[22.47%] bottom-[76.04%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[42.48%] right-[56.96%] top-[28.54%] bottom-[70.23%] bg-[#FEAF84]"></div>
-    <div className="absolute left-[42%] right-[57.57%] top-[25.74%] bottom-[73.44%] bg-[#FEAF84]"></div>
+
+<div className="relative w-full  overflow-hidden">
+  {/* Main product container */}
+  <div className="absolute w-[709px] h-[483px] left-[calc(50%-354.5px+301.5px)] top-[857px] bg-[rgba(247,247,247,0.49)] rounded-[67px]"></div>
+
+  {/* Price display */}
+  <div className="absolute w-[122px] h-[46px] left-[1234px] top-[1238px] font-['PP_Neue_Montreal'] font-medium text-[38px] leading-[46px] text-[#F3A17C]">565.00</div>
+  <div className="absolute w-[114px] h-[29px] left-[1108px] top-[1251px] font-['PP_Neue_Montreal'] font-medium text-[24px] leading-[29px] text-[#BDBDBD]">Total MAD:</div>
+
+  {/* Product image section */}
+  <div className="absolute w-[547px] h-[578px] left-[99px] top-[204px] bg-[#F7F7F7] rounded-[67px]">
+    <div className="absolute w-[449px] h-[322px] left-[152px] top-[326px] bg-red-100"></div>
+    
+    {/* Image thumbnails */}
+    <div className="absolute flex gap-4 left-[148px] top-[644px]">
+      <div className="w-[79px] h-[94px] bg-red-100 border-2 border-[#E7E7E7] rounded-[100px]">
+        <div className="w-[64px] h-[45px] mx-auto mt-[18px] bg-red-300 rounded-[110px]"></div>
+      </div>
+      <div className="w-[79px] h-[94px] bg-red-100 border-2 border-[#E7E7E7] rounded-[100px]">
+        <div className="w-[64px] h-[45px] mx-auto mt-[18px] bg-red-300 rounded-[110px] rotate-[-90deg]"></div>
+      </div>
+      <div className="w-[79px] h-[94px] bg-red-100 border border-[#E7E7E7] rounded-[39.5px]"></div>
+    </div>
+    <div className="absolute w-[29px] h-[3px] left-[173px] top-[735px] border-[7px] border-[#F3A17C]"></div>
   </div>
 
-  {/* Félicitations Fatima 🎉 */}
-  <div className="absolute w-[370px] left-1/2 -translate-x-1/2 top-[376px] font-['Sacramento'] font-normal text-[45px] leading-[66px] text-[#F3A17C]">
-    Félicitations Fatima 🎉
-  </div>
-
-  {/* Group 400 - Heart */}
-  <div className="absolute w-[70px] h-[70px] left-1/2 -translate-x-1/2 top-[260px] bg-white rounded-full">
-    <div className="absolute w-[50px] h-[50px] left-[731px] top-[270px]">
-      <span className="absolute left-[36%] right-[4%] top-[12%] bottom-[28%] font-['PP_Neue_Montreal'] font-medium text-[30px] leading-[36px] text-black transform rotate-[30deg]">
-        ❤
-      </span>
+  {/* Product info */}
+  <div className="absolute left-[729px] top-[335px]">
+    <div className="w-[95px] h-[17px] font-['Averia_Serif_Libre'] font-normal text-[14px] leading-[17px] text-[#F18453]">ACCESSORIES</div>
+    <div className="w-[271px] h-[32px] mt-[17px] font-['PP_Neue_Montreal'] font-medium text-[27px] leading-[32px] text-[#030303]">Gloora Bag for Meakup</div>
+    <div className="w-[102px] h-[19px] mt-[35px] font-['PP_Neue_Montreal'] font-medium text-[16px] leading-[19px] text-[#B7B7B7]">Ref: 00GBM12</div>
+    
+    <div className="flex items-end mt-[48px] gap-4">
+      <div className="w-[178px] h-[72px] font-['PP_Neue_Montreal'] font-medium text-[60px] leading-[72px] text-[#F3A17C]">$19.00</div>
+      <div className="w-[98px] h-[36px] mb-[9px] font-['PP_Neue_Montreal'] font-medium text-[30px] leading-[36px] text-[#B7B7B7]">$30.00</div>
+    </div>
+    
+    <div className="absolute w-[488px] h-[57px] top-[237px] font-['Averia_Serif_Libre'] font-normal text-[27px] leading-[33px] text-[#979797]">
+      Transform Your Skin Elegantly with Our Luxurious and Effective Skincare
+    </div>
+    
+    <div className="absolute left-[0px] top-[367px] flex gap-[40px]">
+      <div className="flex flex-row justify-center items-center py-[22px] px-[24px] gap-[40px] w-[206px] h-[80px] border-[3px] border-[#F3A17C] rounded-[100px]">
+        <div className="w-[24px] h-[0px] border-[3px] border-[#F3A17C]"></div>
+        <div className="w-[30px] h-[36px] font-['PP_Neue_Montreal'] font-medium text-[30px] leading-[36px] text-[#F3A17C]">01</div>
+        <div className="relative w-[24px] h-[24px]">
+          <div className="absolute w-[24px] h-[0px] left-[0px] top-[12px] border-[3px] border-[#F3A17C] rotate-[-90deg]"></div>
+          <div className="absolute w-[24px] h-[0px] left-[0px] top-[12px] border-[3px] border-[#F3A17C]"></div>
+        </div>
+      </div>
+      
+      <div className="flex flex-row justify-center items-center py-[20px] px-[30px] gap-[40px] w-[237px] h-[79px] bg-[#F3A17C] rounded-[100px]">
+        <div className="font-['PP_Neue_Montreal'] font-medium text-[25px] leading-[30px] text-white">Buy Now</div>
+        <div className="relative w-[39px] h-[39px] bg-white rounded-full rotate-90">
+          <div className="absolute left-[50%] right-[20%] top-[24%] border-[2.5px] border-[#F18453] rotate-90"></div>
+          <div className="absolute left-[61%] right-[20%] top-[53%] border-[2.5px] border-[#F18453] rotate-90"></div>
+        </div>
+      </div>
     </div>
   </div>
 
-  {/* Group 398 - Buttons */}
-  <div className=" ml-[30px] w-[257px] h-[94px] left-1/2 -translate-x-1/2 top-[490px]">
-    {/* Rectangle 67 */}
-    <div className="ml-[30px] w-[79px] h-[94px] left-[628px] top-[490px] bg-[#F7F7F7] border-2 border-[#E7E7E7] rounded-[100px]"></div>
-    
-    {/* Rectangle 69 */}
-    <div className=" w-[79px] h-[94px] left-[806px] top-[490px] bg-[#F7F7F7] border-2 border-[#E7E7E7] rounded-[100px]"></div>
-    
-    {/* Screenshot images */}
-    <div className="absolute w-[64px] h-[45px] left-[636px] top-[515px] rounded-[110px]"></div>
-    <div className="absolute w-[64px] h-[45px] left-[823.5px] top-[569.5px] rounded-[110px] transform -rotate-90"></div>
-    <div className="absolute w-[79px] h-[94px] left-[717px] top-[490px] border border-[#E7E7E7] rounded-[39.5px]"></div>
+  {/* In stock badge */}
+  <div className="absolute flex justify-center items-center py-[8px] px-[14px] w-[104px] h-[36px] left-[1307px] top-[352px] bg-[#8FF30C] rounded-[100px]">
+    <div className="font-['PP_Neue_Montreal'] font-medium text-[17px] leading-[20px] text-white">IN STOCK</div>
   </div>
 
-  {/* We help your to be perfect. */}
-  <div className="absolute w-[186px] left-1/2 -translate-x-1/2 top-[715px] font-['PP_Neue_Montreal'] font-medium text-[16px] leading-[19px] text-[#BEBEBE]">
-    We help your to be perfect.
-  </div>
-
-  {/* Download button */}
-  <div className="absolute w-[360px] h-[82px] left-1/2 -translate-x-1/2 top-[619px] bg-[#F3A17C] rounded-[100px] flex flex-row justify-center items-center gap-[40px] px-[30px] py-[20px]">
-    <span className="w-[230px] font-['PP_Neue_Montreal'] font-medium text-[20px] leading-[24px] text-white">
-      Téléchargez votre garantie
-    </span>
-    <div className="w-[30px] h-[30px] relative">
-      <div className="absolute left-[16.67%] right-[58.33%] top-[8.33%] bottom-[58.33%] border-[1.5px] border-white"></div>
-      <div className="absolute left-[16.67%] right-[16.67%] top-[8.33%] bottom-[8.33%] border-[1.5px] border-white"></div>
+  {/* Customer info section */}
+  <div className="absolute w-[547px] h-[483px] left-[99px] top-[857px] bg-[rgba(247,247,247,0.49)] rounded-[67px]">
+    <div className="absolute flex left-[148px] top-[920px] gap-4">
+      <div className="flex justify-center items-center py-[16px] px-[24px] w-[159px] h-[52px] bg-black rounded-[100px]">
+        <div className="font-['PP_Neue_Montreal'] font-medium text-[17px] leading-[20px] text-white">DESCRIPTION</div>
+      </div>
+      <div className="flex justify-center items-center py-[16px] px-[24px] w-[201px] h-[52px] bg-[#E7E7E7] rounded-[100px]">
+        <div className="font-['PP_Neue_Montreal'] font-medium text-[17px] leading-[20px] text-white">ADDITIONAL INFOS</div>
+      </div>
+    </div>
+    
+    <div className="absolute w-[398px] h-[176px] left-[154px] top-[1020px] font-['PP_Neue_Montreal'] font-medium text-[22px] leading-[26px] text-black">
+      Lorem ipsum dolor sit amet consectetur. In donec quis etiam molestie eleifend. Quam eu amet a in fringilla turpis etiam id. Amet neque duis morbi blandit nec. Commodo neque dignissim et amet pulvinar enim.
     </div>
   </div>
 
-  {/* Other products */}
-  <div className="absolute w-[187px] left-1/2 -translate-x-1/2 top-[852.58px] font-['PP_Neue_Montreal'] font-medium text-[30px] leading-[36px] text-[#F3A17C]">
-    Autre Produits
+  {/* Form section */}
+  <div className="absolute left-[760px] top-[920px]">
+    <div className="font-['PP_Neue_Montreal'] font-medium text-[19px] leading-[23px] text-black">Nom Complet</div>
+    <div className="w-[300px] h-[59px] mt-[21px] border border-[#E0E0E0] rounded-[100px]"></div>
+    <div className="w-[66px] h-[19px] mt-[2px] ml-[28px] font-['PP_Neue_Montreal'] font-medium text-[16px] leading-[19px] text-[#DBD5D5]">Laila Rssi</div>
+    
+    <div className="mt-[56px] font-['PP_Neue_Montreal'] font-medium text-[19px] leading-[23px] text-black">Adresse</div>
+    <div className="w-[300px] h-[59px] mt-[21px] border border-[#E0E0E0] rounded-[100px]"></div>
+    <div className="w-[221px] h-[19px] mt-[2px] ml-[28px] font-['PP_Neue_Montreal'] font-medium text-[16px] leading-[19px] text-[#DBD5D5]">N12 Avenue Fountin Imm 12 P34</div>
   </div>
+
+  <div className="absolute left-[1106px] top-[920px]">
+    <div className="font-['PP_Neue_Montreal'] font-medium text-[19px] leading-[23px] text-black">Telephone</div>
+    <div className="w-[256px] h-[59px] mt-[21px] border border-[#E0E0E0] rounded-[100px]"></div>
+    <div className="w-[110px] h-[19px] mt-[2px] ml-[28px] font-['PP_Neue_Montreal'] font-medium text-[16px] leading-[19px] text-[#DBD5D5]">+3367868-988</div>
+    
+    <div className="mt-[134px] w-[183px] h-[23px] font-['PP_Neue_Montreal'] font-medium text-[19px] leading-[23px] text-black">Livraison Gratuite❤️🔥</div>
+  </div>
+
+  {/* Buy Now button at bottom */}
+  <div className="absolute flex justify-center items-center py-[20px] px-[30px] w-[237px] h-[79px] left-[754px] top-[1210px] bg-[#F3A17C] rounded-[100px]">
+    <div className="font-['PP_Neue_Montreal'] font-medium text-[25px] leading-[30px] text-white">Buy Now</div>
+    <div className="relative w-[39px] h-[39px] ml-[40px]">
+      <div className="absolute left-[8%] right-[8%] top-[33%] border-[2.5px] border-white"></div>
+      <div className="absolute left-[41%] right-[41%] top-[50%] border-[2.5px] border-white"></div>
+      <div className="absolute left-[27%] right-[27%] top-[12%] border-[2.5px] border-white"></div>
+    </div>
+  </div>
+
+  {/* Related products title */}
+  <div className="absolute w-[226px] h-[36px] left-[calc(50%-113px+3px)] top-[1415px] font-['PP_Neue_Montreal'] font-medium text-[30px] leading-[36px] text-[#F3A17C]">Related Products</div>
 </div>
-  )
-}
+)
+  }

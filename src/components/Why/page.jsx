@@ -36,7 +36,9 @@ className=' absolute    rounded-[30px] w-[682px] h-[605px] mt-[300px] ml-[325px]
 <div className='absolute w-[18px] h-[18px] rounded-[30px] mt-[350px] ml-[390px] bg-orange-500 '></div>
 <div className='absolute w-[18px] h-[18px] rounded-[30px] mt-[350px] ml-[420px] bg-white '></div>
 <div className='absolute w-[18px] h-[18px] rounded-[30px] mt-[350px] ml-[450px] bg-white '></div>
-
+<img 
+className='absolute w-[50px] h-[50.01px] ml-[900px] mt-[350px]'
+src="/icon/in.svg" alt="nabta" />
 
 <h1 className='absolute fond-bold text-3xl text-white mt-[640px] ml-[350px] ' >
 

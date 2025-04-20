@@ -49,13 +49,14 @@ export default function Home() {
           <h1 className="absolute left-[10px] top-[80px] text-black text-3xl">Get -50% Off</h1>
           <h1 className="absolute left-[10px] top-[120px] text-[#F3A17C] text-xl">Gloora Pack</h1>
           <img className="absolute left-[4px] top-[150px]" src="img/skin.png" alt="img" />
-         
-          <button onClick={() => window.location.href = "/productshop"} className="transition-colors bg-[#f3a17c] hover:bg-primary/90 text-white font-medium text-[15px] flex items-center justify-center gap-[7px] w-[127px] h-[50px] px-2.5 py-[9px] rounded-full shadow-[inset_0px_12px_12px_#ce5c29] absolute top-[360px] left-[90px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50 disabled:pointer-events-none">Buy Now <Anim />
+          <Anim />
+          <button onClick={() => window.location.href = "/productshop"} className="transition-colors bg-[#f3a17c] hover:bg-primary/90 text-white font-medium text-[15px] flex items-center justify-center gap-[7px] w-[127px] h-[50px] px-2.5 py-[9px] rounded-full shadow-[inset_0px_12px_12px_#ce5c29] absolute top-[360px] left-[90px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50 disabled:pointer-events-none">Buy Now 
           <img className="w-[27px] h-[27px]" alt="Frame" src="/icon/shop.svg"/>
            
-           
+
           
           </button>
+        
         </div>
 
         <video controls autoPlay loop muted src="/videos/1r.mp4" className="absolute rounded-[50px] left-[730px] top-[425px] w-[256.01px] h-[433px] mr-10 z-10" />
@@ -327,7 +328,6 @@ Skin Perfecting
 
 
 
-  <div className="fixed inset-0 flex bg-black/50 justify-center items-center  mt-[1000px] z-50"></div>
 
 
 

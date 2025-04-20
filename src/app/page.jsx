@@ -2,7 +2,7 @@
 import useSWR from 'swr';
 import next from "next";
 import Image from "next/image";
-import Rilat from "@/components/Rilat/page";
+//import Rilat from "@/components/Rilat/page";
 import Home from "@/app/Home/page";
 import Prodact from "@/components/Prodact/Page";
 import Prodacto from "@/components/Prodacto/Page";
@@ -13,15 +13,16 @@ import AboutTxt from "@/components/AboutTxt/page";
 import Mobil from "@/components/Mobil/page";
 
 import Img from "@/components/Img/page";
-
+//import Ts from "@/app/test/page";
+import Rilat from '@/components/Rilat/page';
 
 export default function home() {
   return (
     <main>
 
 <Home /> 
+ <Rilat />
 
-<Rilat/>
 <div className="hidden  md:block">
 <Prodact  />
 <Prodacto />

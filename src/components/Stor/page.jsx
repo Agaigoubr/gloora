@@ -12,7 +12,12 @@ export default function ProductGrid() {
   });
 
   return (
+    
+
+
 <div className="min-h-screen bg-gray-50 p-6">
+
+
   <div className="flex overflow-x-auto space-x-6 space-y-6 max-w-6xl mx-auto pb-4">
     {products.map((product, index) => (
       <div
@@ -47,6 +52,9 @@ export default function ProductGrid() {
       </div>
 </div>
     ))}
+
+<div className=' flex mt-[0px] ml-[0px] w-[420px] h-[467px] bg-black rounded-[40px]'></div>
+
   </div>
 </div>
 
