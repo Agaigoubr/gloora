@@ -1,7 +1,9 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FiMenu } from "react-icons/fi"; // أيقونة المينيو للموبايل
+import { usePathname } from 'next/navigation';
 import { Averia_Serif_Libre } from "next/font/google";
 
 const averiaSerifLibre = Averia_Serif_Libre({
@@ -11,39 +13,49 @@ const averiaSerifLibre = Averia_Serif_Libre({
 });
 
 export default function Nav() {
+  const pathname = usePathname(); // 👈 récupérer le chemin
+
   return (
     <>
-      {/* Navbar خاص بالديسكتوب */}
+      {/* Navbar Desktop */}
       <div className={`hidden md:block ${averiaSerifLibre.className}`}>
         <nav className="absolute top-0 left-0 w-full flex items-center justify-between p-4 z-10 mt-10">
-          
+
           {/* Logo */}
           <div className="flex items-center ml-10">
-            <Image src="/logor.svg" alt="Logo" width={120} height={40} />
+            <Image src="/logor.svg" alt="Logo" width={160} height={60} /> {/* Agrandi */}
           </div>
 
           {/* Navigation Links */}
-          <div className="bg-white/60 px-6 py-2 rounded-full flex space-x-10">
-            <Link href="/" className="text-black hover:text-red-400">Home</Link>
-            <Link href="/product" className="text-black hover:text-red-400">Product</Link>
-            <Link href="/about" className="text-black hover:text-red-400">About Us</Link>
+          <div className="bg-[#F6F6F6] px-8 py-2 rounded-full flex space-x-10">
+            <Link href="/" className={`${pathname === '/' ? 'text-[#F3A17C] font-semibold' : 'text-black hover:text-[#F3A17C]'}`}>Home</Link>
+
+            <Link href="/product" className={`${pathname === '/product' ? 'text-[#F3A17C] font-semibold' : 'text-black hover:text-[#F3A17C]'}`}>Product</Link>
+
+            <Link href="/about" className={`${pathname === '/about' ? 'text-[#F3A17C] font-semibold' : 'text-black hover:text-[#F3A17C]'}`}>About Us</Link>
           </div>
 
           {/* Icons & Contact Button */}
           <div className="flex items-center space-x-6 mr-10">
-            <div className="relative">
-              <Link href="/cart">
-                <Image src="/haret.svg" alt="Cart" className="scale-125" width={30} height={30} />
-              </Link>
-              <span className="absolute -top-1 -right-1 bg-[#F3A17C] text-white text-xs rounded-full px-1">100</span>
-            </div>
+            {/* Panier */}
+<div className="relative">
+  <Link href="/cart">
+    <Image src="/panier.svg" alt="Cart" width={30} height={30} />
+    {/* Badge seulement si nécessaire */}
+    <div className="absolute -top-2 -right-2 bg-[#F3A17C] text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">
+      0
+    </div>
+  </Link>
+</div>
 
+            {/* Favoris */}
             <Link href="/favorites">
-              <Image src="/klalb.svg" alt="Favorites" width={40} height={40} />
+              <Image src="/klalb.svg" alt="Favorites" width={25} height={25} />
             </Link>
 
+            {/* Contact */}
             <Link href="/contact">
-              <button className="border border-black text-black px-4 py-1 rounded-full hover:bg-[#F3A17C]">
+              <button className="border border-black text-black px-5 py-1 rounded-full hover:bg-[#F3A17C] transition-colors">
                 Contact
               </button>
             </Link>
@@ -52,27 +64,29 @@ export default function Nav() {
         </nav>
       </div>
 
-      {/* Navbar خاص بالموبايل */}
-      <div className="block md:hidden  top-1 left-1 w-full  p-3 flex justify-between ">
-      {/* Logo */}
-      <Link href="/">
-        <img
-        className='mt-[10px]  w-[177px] h-[37.61px]'
-        src="/logor.svg" alt="Logo"  />
-      </Link>
+      {/* Navbar Mobile */}
+      <div className="block md:hidden top-1 left-1 w-full p-3 flex justify-between items-center">
+        {/* Logo */}
+        <Link href="/">
+          <Image
+            className="w-[160px] h-auto"
+            src="/logor.svg"
+            alt="Logo"
+            width={160}
+            height={60}
+          />
+        </Link>
 
-      {/* Icons */}
-      <div className="flex items-center gap-3">
-        <Link href="/">
-          <Image src="/haret.svg" alt="Cart" className="scale-125" width={44} height={52} />
-        </Link>
-        <Link href="/">
-          <Image src="/icon/men.svg" alt="User" className="scale-125" width={44} height={52} />
-        </Link>
+        {/* Icons Mobile */}
+        <div className="flex items-center gap-4">
+          <Link href="/cart">
+            <Image src="/panier.svg" alt="Cart" width={30} height={30} />
+          </Link>
+          <Link href="/user">
+            <Image src="/icon/men.svg" alt="User" width={30} height={30} />
+          </Link>
+        </div>
       </div>
-    </div>
-     
-    
     </>
   );
 }
