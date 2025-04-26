@@ -3,8 +3,14 @@
 
 import { motion } from 'framer-motion';
 import React from 'react'
+import { useRef, useState, useEffect } from 'react';
 
 export default function page() {
+   const videoRef = useRef(null);
+    const mobileVideoRef = useRef(null);
+    const carouselRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(true);
+    const [isMuted, setIsMuted] = useState(true);
   return (
     <div className="relative">
     {/* Screenshot 2024-12-14 at 20.06.39 1 */}
